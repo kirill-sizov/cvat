@@ -3,7 +3,7 @@ on:
     branches:
       - 'develop'
       
-      
+# trigger    
 jobs:
   run-full:
     uses: opencv/cvat/.github/workflows/full.yml@sk/parametrize-workflows 
