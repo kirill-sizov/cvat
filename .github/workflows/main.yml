@@ -6,6 +6,7 @@ on:
       
 jobs:
   run-full:
-    uses: opencv/cvat/.github/workflows/full.yml@develop
+    uses: opencv/cvat/.github/workflows/full.yml@sk/parametrize-workflows 
     with:
-      ref: ${{ needs.verify_author.outputs.ref }}
+      cvat-dir: cvat
+      ref: 2174f9d
