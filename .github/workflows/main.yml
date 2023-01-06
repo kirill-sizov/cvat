@@ -1,0 +1,11 @@
+on:
+  push:
+    branches:
+      - 'develop'
+      
+      
+jobs:
+  run-full:
+    uses: ./cvat/.github/workflows/full.yml
+    with:
+      ref: ${{ needs.verify_author.outputs.ref }}
