@@ -6,6 +6,6 @@ on:
       
 jobs:
   run-full:
-    uses: ./cvat/.github/workflows/full.yml
+    uses: ./cvat/.github/workflows/full.yml@develop
     with:
       ref: ${{ needs.verify_author.outputs.ref }}
